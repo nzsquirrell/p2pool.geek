@@ -1,5 +1,16 @@
 Basic setup guide.
 
+requirements:
+
+Time.
+Coffee.
+Apache & PHP (should work fine with other servers, but PHP is needed).
+MariaDB
+MYR Wallet(s) and P2Pool instances
+
+
+Rough instructions:
+
 1. Create database on mariaDB
 2. Import sql/myriad.sql into database
 3. create user who has rights to database
@@ -11,6 +22,7 @@ Basic setup guide.
 9. create a cron job to run /cron/runjobs.sh every minute
 10. publish /web to root of your new website
 11. you'll need a pile of apache rewrite rules to make the nice paths work.
-12. edit tblmergedcoins for merged coin wallets
-13. read lots of code
+12. configure apache to only allow access to /web/vcp to authorised users - it's the admin bit
+13. edit tblmergedcoins for merged coin wallets
+14. read lots of code
 
