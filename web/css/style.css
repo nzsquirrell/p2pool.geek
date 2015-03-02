@@ -1,0 +1,26 @@
+.center
+{
+	text-align: center;
+}
+
+td.name
+{
+	font-style: italic;
+	width: 175px;
+}
+
+.no-border
+{
+	border-bottom: none;
+}
+
+body.odd
+{
+	background: #3398CC;
+}
+
+div.container.odd
+{
+	background: white;
+}
+

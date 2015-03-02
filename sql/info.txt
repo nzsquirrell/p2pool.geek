@@ -1,0 +1,35 @@
+Tables and what they contain:
+
+| tblaccounthistory   |	Records change to merge mining accounts, including payout addresses and scheduled payouts
+| tbladminaudit       | Stores all access to the /vcp (admin) region
+| tblalerts           | Alert that are visible on the site
+| tblblocks           | Stores MYR and merged block stats and status
+| tblchangerequests   | Used to store and process changes to merged payout addresses
+| tblcoininfo         | Stores getmininginfo or getinfo for each main and merged coin
+| tbldifficulty       | Stores historic difficulty data for each coin & network combination
+| tbldonationbalance  | Stores current balance for donation wallet
+| tbldonationest      | Stores estimated donation amount for each network
+| tbldonationpayouts  | records how much each miner has been paid from donations
+| tbldonationsettings | donation system settings
+| tblhashgraph        | historic store of network and p2pool hashrates. not used to display anything yet.
+| tbljoblog           | logs from the jobs
+| tbljobs             | jobs scheduled to run
+| tblmergedcoins      | list of coins that are merge mined + wallets etc
+| tblmergedtx         | stores wallet transactions for each merged wallet
+| tblminercoins       | link between merged coins and miner addresses. includes payout addresses for each merged coin
+| tblminerpayout      | stores historic p2pool payout information for each network, to aid in calculating end miner merged payout
+| tblminers           | list of p2pool miners (some old field names here - from my VTC days - needs refactoring)
+| tblmiscdata         | exactly that ... miscellaneous data
+| tblmyrpeers         | wallet peers - used on network status page
+| tblnetworkblocks    | MYR block history - used on network status page
+| tblnodehashrate     | historic data with each node's hashrate
+| tblnodeminers       | link of miners and which node they are mining against
+| tblnodes            | list of nodes to watch and monitor
+| tblp2pnodes         | used for p2pool node map
+| tblp2poolinfo       | key information pulled from each node listed in tblnodes
+| tblpayments         | merged transactions - earnings, donations, fees, payouts
+| tblpendingtx        | merged transactions to be done
+| tblpoolhashrate     | historic data with each network's hashrate
+| tblvisitors         | used for p2pool node map, saves looking up GeoIP information too often
+| tblxratehistory     | exchange rate history
+| tblxrates           | current exchange rates + display and ordering information

@@ -1,0 +1,16 @@
+Basic setup guide.
+
+1. Create database on mariaDB
+2. Import sql/myriad.sql into database
+3. create user who has rights to database
+4. change config.inc.php in both /cron and /web/include to include database connection details
+5. put in MYR RPC details into /crom/config.inc.php
+6. edit tblnodes with information for each node you are pulling information for
+7. define nodes for global stats in /cron/p2pinfo.php lines 191 & 204
+8. edit cron/runjobs.sh to have correct path to runjobs.php and php executable
+9. create a cron job to run /cron/runjobs.sh every minute
+10. publish /web to root of your new website
+11. you'll need a pile of apache rewrite rules to make the nice paths work.
+12. edit tblmergedcoins for merged coin wallets
+13. read lots of code
+

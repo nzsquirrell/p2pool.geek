@@ -1,0 +1,18 @@
+What does this stuff do?
+
+backend_functions.php - a pile of useful stuff in function form.
+config.inc.php - database and wallet settings
+database.inc.php - database connection function
+rpc.php - my custom RPC functions. used by anything that accesses a wallet
+
+runjobs.php - core file for running pretty much all jobs. this calls all other files as needed.
+
+donation.php - handles ALL donation jobs
+logstats.php - stores difficulty and hashrate stats
+merged_coins.php - handles all merged coin blocks / payments etc. Big file, lots of hours spent here.
+networkblocks.php - MYR Network status page
+p2pnodes.php - network map functions
+update_blocks.php - updates new MYR blocks
+update_p2pinfo.php - pulls stats from p2pool nodes
+update_xrates.php - pulls exchange rates from exchanges.
+validate.php - validates updated merged payout addresses

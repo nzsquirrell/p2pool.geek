@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Disallow: /cgi-bin/
+Sitemap: http://p2pool.digitaltech.co.nz/sitemap.xml
